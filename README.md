@@ -52,10 +52,6 @@ With use of cutting-edge technology, Graphle can be of greate use in remote educ
 <p align="center">
  <img src = "https://raw.githubusercontent.com/Akshit8/Graphle/main/Assets/img/classroom.png">
 </p>
-<br>
-<p align="center">
- <img src = "https://raw.githubusercontent.com/Akshit8/Graphle/main/Assets/img/GAN.png">
-</p>
 
 <br>
 <h2 align="center">How it works?</h2>
