@@ -40,13 +40,13 @@ With use of cutting-edge technology, Graphle can be of greate use in remote educ
 <h2 align="center">What have we build?</h2>
 <br>
 
- - <bold>Android App:</bold> Built with native Android SDK and Java, it captures the speech of the teacher/instructor and converts it into text using Google's Speech-to-Text API and sends it to our Node.js backend.
+ - **Android App:** Built with native Android SDK and Java, it captures the speech of the teacher/instructor and converts it into text using Google's Speech-to-Text API and sends it to our Node.js backend.
  
-  - <bold>Neural Network (Flask API):</bold> The text is processed and converted into images using Neural Networks(Generative adversarial network)
+  - **Neural Network (Flask API):** The text is processed and converted into images using Neural Networks(Generative adversarial network)
   
-  - <bold>Clipboard:</bold> Designed with HTML/CSS/JS and websockets, it facilitate the display of generated images in real-time, along with story recitation. The generated images can be shown onto the smart screen in the classroom or onto the individual screen of the student (Remote Classroom).(Sessions can be viewed on our website)
+  - **Clipboard:** Designed with HTML/CSS/JS and websockets, it facilitate the display of generated images in real-time, along with story recitation. The generated images can be shown onto the smart screen in the classroom or onto the individual screen of the student (Remote Classroom).(Sessions can be viewed on our website)
   
-  - <bold>Node.js Backend:</bold> It acts as the control center for our service. It accepts the story snippet as text from the android application, sends it to the Flask API for keyword detection, gets the image URL (for the received keywords) from Microsoft Bing API and stores the entire backup on MongoDB. The story snippet along with the image URLs and audio clip's URL is sent via Pusher to all the devices connected to the session in real-time. 
+  - **Node.js Backend:** It acts as the control center for our service. It accepts the story snippet as text from the android application, sends it to the Flask API for keyword detection, gets the image URL (for the received keywords) from Microsoft Bing API and stores the entire backup on MongoDB. The story snippet along with the image URLs and audio clip's URL is sent via Pusher to all the devices connected to the session in real-time. 
 
 <p align="center">
  <img src = "https://github.com/IshaanOhri/NLP-Project/blob/master/Assets/img/remote.png">
