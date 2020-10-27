@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Compiled and minified CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+		integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+		crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="/css/style.css" />
+	<script src="https://js.pusher.com/7.0/pusher.min.js"></script>
+	<title>Graphle</title>
+	<link rel="icon" type="image/png" href="src/public/favicon.png" />
+</head>
+
+<body id="body" style="background: rgb(248, 242, 223);">
+	{{!-- {{> _profile}} --}}
+	<div class="container">
+		{{{body}}}
+	</div>
+</body>
+<script>
+	Pusher.logToConsole = false;
+
+	var pusher = new Pusher('0b4f958b72ea1f9abde2', {
+		cluster: 'ap2'
+	});
+
+	document.getElementById("grid").style.display = '';
+
+	var img1 = document.getElementById('img1');
+	var img2 = document.getElementById('img2');
+	var img3 = document.getElementById('img3');
+	var img4 = document.getElementById('img4');
+	var img5 = document.getElementById('img5');
+	var img6 = document.getElementById('img6');
+	var query = document.getElementById('query');
+
+	var channel = pusher.subscribe(`presence-{{ sessionID }}`);
+	// console.log(channel);
+	channel.bind('my-event', function (data) {
+		const query2 = data.message.query;
+		const urls = data.message.urls;
+
+		console.log(query2)
+
+		img1.src = urls[0];
+		img2.src = urls[1];
+		img3.src = urls[2];
+		img4.src = urls[3];
+		img5.src = urls[4];
+		img6.src = urls[5];
+	});
+
+	const members = []
+
+	channel.bind('pusher:member_added', function (member) {
+		members.push(member.info)
+
+		document.getElementById('participants-count').innerHTML = `Participants (${channel.members.count})`;
+
+		var user = document.createElement('div')
+
+		var img = document.createElement('img')
+		img.src = member.info.image;
+		img.style.width = '30px';
+		img.style.height = '30px';
+
+		img.style.marginRight = '10px'
+
+		img.style.borderTopLeftRadius = '50% 50%';
+		img.style.borderTopRightRadius = '50% 50%';
+		img.style.borderBottomLeftRadius = '50% 50%';
+		img.style.borderBottomRightRadius = '50% 50%';
+
+		var name = document.createElement('div')
+
+		name.innerHTML = member.info.name;
+		img.style.display = 'inline'
+		name.style.display = 'inline'
+		user.appendChild(img)
+		user.appendChild(name)
+		user.id = member.id
+		document.getElementById("participants").appendChild(user);
+	});
+
+	channel.bind('pusher:member_removed', function (member) {
+
+		document.getElementById('participants-count').innerHTML = `Participants (${channel.members.count})`;
+
+		fetch(`http://localhost:3000/channel/remove?channelID={{sessionID}}&participantID=${member.id}`)
+			.then(function (response) {
+				return response.text();
+			}).then(function (html) {
+				console.log(html);
+			}).catch(function (err) {
+				console.warn('Something went wrong.', err);
+			});
+
+		const index = members.indexOf(member.info);
+		if (index > -1) {
+			members.splice(index, 1);
+		}
+		var user = document.getElementById(member.id);
+		document.getElementById('participants').removeChild(user);
+	});
+
+	channel.bind('pusher:subscription_succeeded', function (oldMembers) {
+
+		document.getElementById('participants-count').innerHTML = `Participants (${channel.members.count})`;
+
+		oldMembers.each(function (member) {
+			members.push(member.info)
+
+			var user = document.createElement('div')
+			user.style.margin = '10px'
+
+			var img = document.createElement('img')
+			img.src = member.info.image;
+			img.style.width = '30px';
+			img.style.height = '30px';
+
+			img.style.marginRight = '10px'
+
+			img.style.borderTopLeftRadius = '50% 50%';
+			img.style.borderTopRightRadius = '50% 50%';
+			img.style.borderBottomLeftRadius = '50% 50%';
+			img.style.borderBottomRightRadius = '50% 50%';
+
+			var name = document.createElement('div')
+
+			name.innerHTML = member.info.name;
+			img.style.display = 'inline'
+			name.style.display = 'inline'
+			user.appendChild(img)
+			user.appendChild(name)
+			user.id = member.id
+			document.getElementById("participants").appendChild(user);
+		});
+	})
+
+</script>
+
+</html>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="3170px" height="600px" viewBox="0 0 3170 600" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group 6</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard" transform="translate(-291.000000, -445.000000)">
+            <g id="Group-6" transform="translate(291.000000, 445.000000)">
+                <g id="Group-5">
+                    <g id="Group-2">
+                        <rect id="Rectangle" stroke="#6D7278" stroke-width="2" x="1" y="1" width="848" height="598" rx="10"></rect>
+                        <g id="Group" transform="translate(60.000000, 60.000000)">
+                            <circle id="Oval" fill="#EA635E" cx="75" cy="75" r="75"></circle>
+                            <text id="1" font-family="Avenir-Medium, Avenir" font-size="80" font-weight="400" fill="#FFFFFF">
+                                <tspan x="53" y="101">1</tspan>
+                            </text>
+                        </g>
+                    </g>
+                    <text id="Some-children-become" font-family="Avenir-Light, Avenir" font-size="50" font-weight="300" fill="#000000">
+                        <tspan x="50" y="288">Some children become very </tspan>
+                        <tspan x="50" y="356">distressed about going to school. </tspan>
+                        <tspan x="50" y="424">Autistic children need more time, </tspan>
+                        <tspan x="50" y="492">effort and patience to learn at a </tspan>
+                        <tspan x="50" y="560">normal pace.</tspan>
+                    </text>
+                </g>
+                <g id="Group-3" transform="translate(2320.000000, 0.000000)">
+                    <g id="Group-2">
+                        <rect id="Rectangle" stroke="#6D7278" stroke-width="2" x="1" y="1" width="848" height="598" rx="10"></rect>
+                        <g id="Group" transform="translate(60.000000, 60.000000)">
+                            <circle id="Oval" fill="#EA635E" cx="75" cy="75" r="75"></circle>
+                            <text id="3" font-family="Avenir-Medium, Avenir" font-size="80" font-weight="400" fill="#FFFFFF">
+                                <tspan x="53" y="101">3</tspan>
+                            </text>
+                        </g>
+                    </g>
+                    <text id="Existing-staff-train" font-family="Avenir-Light, Avenir" font-size="50" font-weight="300" fill="#000000">
+                        <tspan x="37" y="288">Existing staff training provision was </tspan>
+                        <tspan x="37" y="356">challenged by parents who felt </tspan>
+                        <tspan x="37" y="424">that it was not possible to gain </tspan>
+                        <tspan x="37" y="492">sufficient understanding in a one </tspan>
+                        <tspan x="37" y="560">day course on ‘special needs’.</tspan>
+                    </text>
+                </g>
+                <g id="Group-4" transform="translate(1160.000000, 0.000000)">
+                    <g id="Group-2">
+                        <rect id="Rectangle" stroke="#6D7278" stroke-width="2" x="1" y="1" width="848" height="598" rx="10"></rect>
+                        <g id="Group" transform="translate(60.000000, 60.000000)">
+                            <circle id="Oval" fill="#EA635E" cx="75" cy="75" r="75"></circle>
+                            <text id="2" font-family="Avenir-Medium, Avenir" font-size="80" font-weight="400" fill="#FFFFFF">
+                                <tspan x="53" y="101">2</tspan>
+                            </text>
+                        </g>
+                    </g>
+                    <text id="It-was-‘pot-luck’-to" font-family="Avenir-Light, Avenir" font-size="50" font-weight="300" fill="#000000">
+                        <tspan x="37" y="288">It was ‘pot luck’ to get an assistant </tspan>
+                        <tspan x="37" y="356">or teacher who had some </tspan>
+                        <tspan x="37" y="424">understanding of autism and how </tspan>
+                        <tspan x="37" y="492">this could change every year.</tspan>
+                    </text>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

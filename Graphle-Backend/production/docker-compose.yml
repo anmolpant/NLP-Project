@@ -1,0 +1,44 @@
+version: '3'
+
+services:
+    app:
+        image: ishaanohri/graphle:latest
+        container_name: app-server
+        restart: unless-stopped
+        env_file: ./file.env
+        networks:
+            - graphle-network
+
+    webserver:
+        image: nginx:latest
+        container_name: web-server
+        restart: unless-stopped
+        ports:
+            - '80:80'
+        volumes:
+            - ./nginx1:/etc/nginx/conf.d/
+            - certbot-etc:/etc/letsencrypt
+            - certbot-var:/var/lib/letsencrypt
+        depends_on:
+            - app
+        networks:
+            - graphle-network
+
+    certbot:
+        image: certbot/certbot
+        container_name: certbot
+        volumes:
+            - certbot-etc:/etc/letsencrypt
+            - certbot-var:/var/lib/letsencrypt
+            - website:/var/www/html
+        depends_on:
+            - web-server
+        command: certonly --webroot --webroot-path=/var/www/html --email akshitsadana@gmail.com --agree-tos --no-eff-email --staging -d graphle.ml
+
+volumes:
+    certbot-etc:
+    certbot-var:
+
+networks:
+    graphle-network:
+        driver: bridge
