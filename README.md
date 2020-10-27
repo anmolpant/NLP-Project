@@ -66,5 +66,5 @@ With use of cutting-edge technology, Graphle can be of greate use in remote educ
 <br>
 
 <p align="center">
- <img src = "https://github.com/Akshit8/Graphle/blob/main/Assets/img/TechStacks.png">
+ <img src = "https://github.com/IshaanOhri/NLP-Project/blob/master/Assets/img/TechStacks.png">
 </p>
