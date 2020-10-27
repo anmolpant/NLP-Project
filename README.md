@@ -13,7 +13,7 @@
 </div>
 <br>
 <br>
-<p align="center">Autistic kids often receive education in a special way where concepts are delivered in a graphical way. Research says that visual memory is 60,000X faster than text/auditory memory. Inspired by graphical learning we created Graphle, a very effective visual learning tool for strengthening visual memory of our students.
+<p align="center">Autistic kids often receive education in a special way where concepts are delivered in a graphical way. Research says that visual memory is 60,000x faster than text/auditory memory. Inspired by graphical learning we created Graphle, a very effective visual learning tool for strengthening visual memory of our students.
 </p>
 <br>
 <p align="center">
