@@ -52,15 +52,7 @@ With use of cutting-edge technology, Graphle can be of greate use in remote educ
 <p align="center">
  <img src = "https://raw.githubusercontent.com/Akshit8/Graphle/main/Assets/img/classroom.png">
 </p>
-
 <br>
-<h2 align="center">Neural Network Architecture</h2>
-
-<p align="center">
- <a href="https://openaccess.thecvf.com/content_cvpr_2018/papers/Xu_AttnGAN_Fine-Grained_Text_CVPR_2018_paper.pdf">Reference</a>
-</p>
-<br>
-
 <p align="center">
  <img src = "https://raw.githubusercontent.com/Akshit8/Graphle/main/Assets/img/GAN.png">
 </p>
@@ -78,5 +70,5 @@ With use of cutting-edge technology, Graphle can be of greate use in remote educ
 <br>
 
 <p align="center">
- <img src = "https://raw.githubusercontent.com/Akshit8/Graphle/501fa5949b3629adda2631231798fe1336fd2729/Assets/img/techstack.svg">
+ <img src = "https://github.com/Akshit8/Graphle/blob/main/Assets/img/TechStacks.png">
 </p>
