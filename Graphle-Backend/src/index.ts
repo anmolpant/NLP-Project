@@ -1,7 +1,4 @@
-/* eslint-disable import/first */
-require('newrelic');
-
-import express, { Request, Response } from 'express';
+import express, { Application, Request, Response } from 'express';
 import cors from 'cors';
 import morgan from 'morgan';
 import path from 'path';
@@ -17,7 +14,7 @@ import pusherRouter from './api/routes/pusher';
 import authRouter from './api/routes/auth';
 import loginRouter from './api/routes/login';
 
-const app = express();
+const app: Application = express();
 
 // CORS
 app.use(cors());
@@ -26,12 +23,15 @@ app.use(cors());
 app.use(express.static(path.join(__dirname, '/public')));
 
 // Body parser
-app.use(express.urlencoded({ extended: false }));
+app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
 // PORT and HOST initialization
 const PORT: number = Number(process.env.PORT);
 const HOST: string = String(process.env.HOST);
+
+console.log(HOST);
+console.log(PORT);
 
 // Initialize passport
 require('./config/passport')(passport);
@@ -76,7 +76,7 @@ app.use(passport.initialize());
 app.use(passport.session());
 
 // Static Folder
-// app.use(express.static(path.join(__dirname, '/public')));
+app.use(express.static(path.join(__dirname, '/public')));
 
 // Import routers
 app.use(healthRouter);

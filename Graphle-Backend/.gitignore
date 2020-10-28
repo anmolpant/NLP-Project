@@ -5,3 +5,4 @@ bin
 newrelic_agent.log
 /src/logger/logs.log
 /production/file.env
+/src/learning-283013-9b7177e8ca72.json

@@ -54,24 +54,6 @@ p {
 	font-size: medium;
 	color: #000000;
 }
-#grid {
-	display: grid;
-	grid-template-rows: 300px 300px;
-	grid-template-columns: 300px 300px 300px;
-	grid-gap: 20px;
-	align-items: stretch;
-	justify-items: center;
-	margin: 0;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-}
-.grid img {
-	border: 1px solid #ccc;
-	box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
-	max-width: 100%;
-}
 #profile-body {
 	margin: 0;
 	padding: 0;
@@ -207,4 +189,41 @@ p {
 	padding: 10px 40px 10px 40px !important;
 	color: #000000;
 	margin-bottom: 20px;
+}
+table,
+th,
+td {
+	border: 1px solid rgb(248, 242, 223);
+}
+
+th,
+td {
+	padding: 5px;
+	text-align: center;
+}
+
+#img1,
+#img2,
+#img3,
+#img4,
+#img5,
+#img6 {
+	width: 300px;
+	height: 300px;
+}
+
+#images {
+	margin: 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -40%);
+}
+
+#query {
+	font-weight: 800;
+	font-style: italic;
+	color: #000000;
+	font-family: 'Roboto', sans-serif;
+	font-size: 30px;
 }

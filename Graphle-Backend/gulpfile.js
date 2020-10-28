@@ -16,14 +16,6 @@ gulp.task('js', () => {
 		.src(['src/**/*.js', '!src/**/node_modules/', '!src/**/node_modules/**/*'])
 		.pipe(newer('bin'))
 		.pipe(preprocess())
-		.pipe(
-			minify({
-				ext: {
-					min: '.js'
-				},
-				noSource: true
-			})
-		)
 		.pipe(gulp.dest('bin'));
 });
 
@@ -34,14 +26,6 @@ gulp.task('ts', () => {
 		.pipe(newer('bin'))
 		.pipe(preprocess())
 		.pipe(tsProject())
-		.pipe(
-			minify({
-				ext: {
-					min: '.js'
-				},
-				noSource: true
-			})
-		)
 		.pipe(gulp.dest('bin'));
 });
 
@@ -62,16 +46,7 @@ gulp.task('pretty-data', () => {
 	configuredExtensions.push('json');
 	configuredExtensions.push('xlf');
 	configuredExtensions.push('svg');
-	return gulp
-		.src(['src/**/*.{xml,json,xlf,svg}', '!src/**/node_modules/', '!src/**/node_modules/**/*'])
-		.pipe(newer('bin'))
-		.pipe(
-			prettyData({
-				type: 'minify',
-				preserveComments: false
-			})
-		)
-		.pipe(gulp.dest('bin'));
+	return gulp.src(['src/**/*.{xml,json,xlf,svg}', '!src/**/node_modules/', '!src/**/node_modules/**/*']).pipe(newer('bin')).pipe(gulp.dest('bin'));
 });
 
 gulp.task('copy', () => {

@@ -8,7 +8,9 @@ const code = {
 	alreadyJoined: 'alreadyJoined',
 	addingParticipant: 'addingParticipant',
 	noParticipant: 'noParticipant',
-	removingParticipant: 'removingParticipant'
+	removingParticipant: 'removingParticipant',
+	invalidFileType: 'invalidFileType',
+	serverError: 'serverError'
 };
 
 const message = {
@@ -21,7 +23,9 @@ const message = {
 	alreadyJoined: 'The participant is already a part of the channel',
 	addingParticipant: 'Error adding participant to database',
 	noParticipant: 'Participant not a part of channel',
-	removingParticipant: 'Error removing participant from database'
+	removingParticipant: 'Error removing participant from database',
+	invalidFileType: 'Entered file type is incorrect',
+	serverError: 'Oops!. Some error occurred'
 };
 
 export { code, message };
