@@ -37,14 +37,14 @@ With use of cutting-edge technology, Graphle can be of greate use in remote educ
 </p>
 
 <br>
-<h2 align="center">What have we build?</h2>
+<h2 align="center">What have we built?</h2>
 <br>
 
  - **Android App:** Built with native Android SDK and Java, it captures the speech of the teacher/instructor and converts it into text using Google's Speech-to-Text API and sends it to our Node.js backend.
  
-  - **Neural Network (Flask API):** The text is processed and converted into images using Neural Networks(Generative adversarial network)
+  - **Neural Network (Flask API):** The text received is processed and keywords are extracted from the same using a sequence to sequence encoder-decoder model. Both the models have been served with the help of Flask API which receive the text, preprocess it, extract keywords and send them to the Node.js Backend.
   
-  - **Clipboard:** Designed with HTML/CSS/JS and websockets, it facilitate the display of generated images in real-time, along with story recitation. The generated images can be shown onto the smart screen in the classroom or onto the individual screen of the student (Remote Classroom).(Sessions can be viewed on our website)
+  - **Clipboard:** Designed with HTML/CSS/JS and websockets, it facilitates the display of the generated images in real-time, along with story recitation. The generated images can be shown onto the smart screen in a classroom or onto the individual screen of the student (Remote Classroom)-Sessions can be viewed on our website.
   
   - **Node.js Backend:** It acts as the control center for our service. It accepts the story snippet as text from the android application, sends it to the Flask API for keyword detection, gets the image URL (for the received keywords) from Microsoft Bing API and stores the entire backup on MongoDB. The story snippet along with the image URLs and audio clip's URL is sent via Pusher to all the devices connected to the session in real-time. 
 
