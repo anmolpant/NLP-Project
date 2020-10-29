@@ -57,7 +57,7 @@ def upload():
             basepath, 'uploads', secure_filename(f.filename))
         f.save(file_path)
         # Make prediction
-        preds = model_predict(file_path, model)
+        preds = model_predict(sent, model1, model2)
         # Simple argmax
         pred_class = decode_predictions(preds, top=1)  
         result = str(pred_class[0][0][1])        
