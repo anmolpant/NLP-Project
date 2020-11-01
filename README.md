@@ -17,7 +17,7 @@
 </p>
 <br>
 <p align="center">
-With use of cutting-edge technology, Graphle can be of greate use in remote education, where teachers can take their classroom boards to their students and allow Graphle simplify concepts for them.
+With use of cutting-edge technology, Graphle can be of great use in remote education, where teachers can take their classroom boards to their students and allow Graphle simplify concepts for them.
 </p>
 
 <br>
