@@ -27,7 +27,7 @@ const pusher: Pusher = new Pusher({
 });
 
 const projectId: string = String(process.env.GOOGLE_CLOUD_PROJECT_ID);
-const keyFilename: string = 'learning-283013-9b7177e8ca72.json';
+const keyFilename: string = 'kubernetes-learn-294607-b0b5bf3dfb5f.json';
 
 const storage: Storage = new Storage({ projectId, keyFilename });
 const client = new TextToSpeechClient({ projectId, keyFilename });

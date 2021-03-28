@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "kubernetes-learn-294607",
+  "private_key_id": "b0b5bf3dfb5f330f772ce8ff2a56bc71d567b9c0",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDnovN+F7s5Sq/A\nlPI5ulHxAX4/3yQb2F8R08Qg8o1+Iv2iG4CUYMIaL2NXITRqE+OwWCNsdGqQhUhQ\nGCOa6Ev7siB9z4w92gE9P3dQHw9Vya3Vm0b3N/uaOrBCzj+ZdgyCFviG6brdzdkN\ntSLhJHRX2IZFeugk0hE3vzs++rXpZXpSx9tEGEyRNtzEY+oYhPkiHoKGoo6B7zcL\nXLvpV7Do51joi2XpVeZZngxjPXA0cOZ74JrzN7YO9K0X+oLgD07CppnhNd9E02wi\n4i2l+sWI5EBgGa3sTmVtPyWJNy0Hxo3bP1eJlgqFYWPGk8DtsqAnpL89MnggrtaO\nQLgA8BzDAgMBAAECggEABgChKld8wZd6XwAHwqWIjGQXytJ7MeTcUyepSn3yIiWW\nwYsl51X54a23d3a1pYCBqh/oWqURbTQWFwTNj9eT+ArPk/TQul3PsEx1AaoCmziq\n+XnnHe6SuuuwTUZvguvP0GNo/2dVsUMtelgty3xVEl13UGNGy/bM7xZGWyVjCtdK\nrI5xvroM6gq+mVUGvYcdvNy7PYqqdA/3n9i3AjGoxlYK6QKzoAK5+dJdpYLBWKUv\n9uCShn9syaFF//GvppiNTNK5MCUZoutMU5cFDlklJTXJvF3FJLKh7J889xTDEFfP\nmi1t3Vwii/+9m7TZXXH8tCy4bvO7XOJNfQnLFQtWlQKBgQD4Jv0hwHbEL9Kulcjg\nIWbBmgCncaG7mU5nLdVbU0r9TIKGqkUuKiYKYLhlByo4Tsl4+oS0Vg4nxBbetO8N\nM1nOfb6/kjga4GegagpONBhWZeIOW9odNMj3LjAMSE7l9bQ6SEcOM+//QUY5JnZk\nPhudqxv/Um3SOAG+lu6YUnC/zQKBgQDu9kCtBvLlFJ+eOsnTHvXcsDwwgtC8/eLg\nFvXRHp7ohYz044/GkSZMMQ4h6fZUxUXseD3zmb6hDSmM+5d5r3VxhhSyToMp+vqx\n1is16ASx9kHGOvU/oafbRwPwZYDOPGPaIP8hZRdbTDPp6lG1aUQybD2ONqqbLjFp\nxFyD3XcezwKBgQDT8FC/k+abtpCE5Y6zxjNB5KrsV8OfOtdYji+sGR5x6feM1j3R\nqNPmhybVumHXx4qRVb0jXGAonHQ/714/8vyfvIu+iD58ze4Tdp2onxuuJsQEKXTG\n/v8pBXyp8NPZ2Zj9Mh/lxHwUkQZN50i0YsspRSvbS+ZZ5dWvlq7ez4JWfQKBgAK7\nI8AWfT4q/ywCxf24s9yi0v1G8XXHfQlMmeCa9fv4UsUVuLXvQL3MLborf1o2qvbp\n5ONc1XXnvZrT4UZNwAzdGG11QkB/ks/nf7TtAui5xMSsNdNVWKLD7AKaVl+FByse\nB2xtSFgNxeYdfHOTUWk2HXn7m/WMEJqB2QDUziC3AoGBANZkIG/AZ0qWbnUiOK/d\n3cPZDcmOlOhWNouNMEZhFQofKZA3p5GByAShB6S2TvDHDQme1eUv2qJBoApGbjp/\nOUAqEw7qdOLmJDdsmhyq2gvcM6f5fWxW+2lJ5ZWkb430vYwcjnwUJ3BSZbCMn1mV\nfunIDS8GrFx+Ng3nxvXf/aSO\n-----END PRIVATE KEY-----\n",
+  "client_email": "travis-deployer@kubernetes-learn-294607.iam.gserviceaccount.com",
+  "client_id": "109567790675481871769",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/travis-deployer%40kubernetes-learn-294607.iam.gserviceaccount.com"
+}
